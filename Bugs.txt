@@ -1,0 +1,1 @@
+-need to fix facing animatons for up and down, added traces but can't find out where the bug is
