@@ -24,6 +24,8 @@ class AssetData {
 			type.set ("assets/data/level1.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/data/Levels.oep", "assets/data/Levels.oep");
 			type.set ("assets/data/Levels.oep", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/data/newlevel2.oel", "assets/data/newlevel2.oel");
+			type.set ("assets/data/newlevel2.oel", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/images/bannerUnit.png", "assets/images/bannerUnit.png");
 			type.set ("assets/images/bannerUnit.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
@@ -32,6 +34,8 @@ class AssetData {
 			type.set ("assets/images/player.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/tiles.png", "assets/images/tiles.png");
 			type.set ("assets/images/tiles.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Tileset1.png", "assets/images/Tileset1.png");
+			type.set ("assets/images/Tileset1.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/WallTile.jpg", "assets/images/WallTile.jpg");
 			type.set ("assets/images/WallTile.jpg", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/music/HaxeFlixel_Tutorial_Game.mp3", "assets/music/HaxeFlixel_Tutorial_Game.mp3");
