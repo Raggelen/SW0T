@@ -42,6 +42,8 @@ class Player extends FlxSprite
 	{
 		loadGraphic(AssetPaths.player__png, true, 16, 16); //tells sprite to use player.png, its animated, and that each frame is 16x16
 		drag.x = drag.y = 1600;
+		setSize(8, 14); //change hitbox so that player can move easier through 1 block doorways
+		offset.set(4, 2); //change hitbox so that player can move easier through 1 block doorways
 
 		//allows the sprite to be flipped based on its 'facing' value, so we only need sprites for one direction (left)
 		setFacingFlip(FlxObject.LEFT, false, false); // Don't flip when facing left
@@ -125,30 +127,30 @@ class Player extends FlxSprite
 		}
 	}
 
-	public function faceDirection()
+	public function faceDirection() // what direction is the unit facing. 
 	{
 		if (mA == 45)
 		{
 			facing = FlxObject.UP;
-			trace("UP");
+			//trace("UP");
 		}
 
 		if (mA == -45)
 		{
 			facing = FlxObject.DOWN;
-			trace("DOWN");
+//trace("DOWN");
 		}
 
 		if (mA == 180)
 		{
 			facing = FlxObject.LEFT;
-			trace("LEFT");
+			//trace("LEFT");
 		}
 
 		if (mA == 0)
 		{
 			facing = FlxObject.RIGHT;
-			trace("RIGHT");
+			//trace("RIGHT");
 		}
 
 		switch (facing)
