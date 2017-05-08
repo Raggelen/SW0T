@@ -18,12 +18,24 @@ class AssetData {
 			
 			path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 			type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/data/level1.oel", "assets/data/level1.oel");
+			type.set ("assets/data/level1.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/data/level1.png", "assets/data/level1.png");
+			type.set ("assets/data/level1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/data/Levels.oep", "assets/data/Levels.oep");
+			type.set ("assets/data/Levels.oep", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/images/bannerUnit.png", "assets/images/bannerUnit.png");
+			type.set ("assets/images/bannerUnit.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 			type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/images/player.png", "assets/images/player.png");
 			type.set ("assets/images/player.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/tiles.png", "assets/images/tiles.png");
+			type.set ("assets/images/tiles.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/WallTile.jpg", "assets/images/WallTile.jpg");
 			type.set ("assets/images/WallTile.jpg", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/music/HaxeFlixel_Tutorial_Game.mp3", "assets/music/HaxeFlixel_Tutorial_Game.mp3");
+			type.set ("assets/music/HaxeFlixel_Tutorial_Game.mp3", Reflect.field (AssetType, "music".toUpperCase ()));
 			path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 			type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
