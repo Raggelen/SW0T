@@ -38,6 +38,8 @@ class Player extends FlxSprite
 
 	}
 
+	
+	
 	public function playerAvatar()
 	{
 		loadGraphic(AssetPaths.player__png, true, 16, 16); //tells sprite to use player.png, its animated, and that each frame is 16x16

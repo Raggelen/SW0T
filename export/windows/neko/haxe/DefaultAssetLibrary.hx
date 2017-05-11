@@ -72,6 +72,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
 		Font.registerFont (__ASSET__flixel_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__flixel_fonts_monsterrat_ttf);
 		
@@ -81,6 +86,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -612,6 +622,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -623,18 +638,28 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
-		path.set ("assets/data/level1.oel", "assets/data/level1.oel");
-		type.set ("assets/data/level1.oel", AssetType.TEXT);
-		path.set ("assets/data/level1.png", "assets/data/level1.png");
-		type.set ("assets/data/level1.png", AssetType.IMAGE);
+		path.set ("assets/data/Level1/newlevel3.oel", "assets/data/Level1/newlevel3.oel");
+		type.set ("assets/data/Level1/newlevel3.oel", AssetType.TEXT);
+		path.set ("assets/data/Level1/newlevel3image.png", "assets/data/Level1/newlevel3image.png");
+		type.set ("assets/data/Level1/newlevel3image.png", AssetType.IMAGE);
 		path.set ("assets/data/Levels.oep", "assets/data/Levels.oep");
 		type.set ("assets/data/Levels.oep", AssetType.TEXT);
-		path.set ("assets/data/newlevel2.oel", "assets/data/newlevel2.oel");
-		type.set ("assets/data/newlevel2.oel", AssetType.TEXT);
+		path.set ("assets/data/SW0TLEVELS.oep", "assets/data/SW0TLEVELS.oep");
+		type.set ("assets/data/SW0TLEVELS.oep", AssetType.TEXT);
+		path.set ("assets/data/TestLevels/TestLevel/TestLevel.oel", "assets/data/TestLevels/TestLevel/TestLevel.oel");
+		type.set ("assets/data/TestLevels/TestLevel/TestLevel.oel", AssetType.TEXT);
+		path.set ("assets/data/TestLevels/TestLevel/TestLevel.png", "assets/data/TestLevels/TestLevel/TestLevel.png");
+		type.set ("assets/data/TestLevels/TestLevel/TestLevel.png", AssetType.IMAGE);
+		path.set ("assets/data/TestLevels/TestLevel2/TestLevel2.oel", "assets/data/TestLevels/TestLevel2/TestLevel2.oel");
+		type.set ("assets/data/TestLevels/TestLevel2/TestLevel2.oel", AssetType.TEXT);
+		path.set ("assets/data/TestLevels/TestLevel2/TestLevel2.png", "assets/data/TestLevels/TestLevel2/TestLevel2.png");
+		type.set ("assets/data/TestLevels/TestLevel2/TestLevel2.png", AssetType.IMAGE);
 		path.set ("assets/images/bannerUnit.png", "assets/images/bannerUnit.png");
 		type.set ("assets/images/bannerUnit.png", AssetType.IMAGE);
 		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		path.set ("assets/images/menuScreen.png", "assets/images/menuScreen.png");
+		type.set ("assets/images/menuScreen.png", AssetType.IMAGE);
 		path.set ("assets/images/player.png", "assets/images/player.png");
 		type.set ("assets/images/player.png", AssetType.IMAGE);
 		path.set ("assets/images/tiles.png", "assets/images/tiles.png");
@@ -669,24 +694,39 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-		id = "assets/data/level1.oel";
+		id = "assets/data/Level1/newlevel3.oel";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-		id = "assets/data/level1.png";
+		id = "assets/data/Level1/newlevel3image.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/data/Levels.oep";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-		id = "assets/data/newlevel2.oel";
+		id = "assets/data/SW0TLEVELS.oep";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/data/TestLevels/TestLevel/TestLevel.oel";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/TestLevels/TestLevel/TestLevel.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/data/TestLevels/TestLevel2/TestLevel2.oel";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/TestLevels/TestLevel2/TestLevel2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/bannerUnit.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/menuScreen.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/player.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
@@ -749,6 +789,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1513,6 +1558,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1522,6 +1572,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
 
 
 

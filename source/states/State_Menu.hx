@@ -25,16 +25,14 @@ class State_Menu extends FlxState
 	override public function create():Void
 	{
 		FlxG.camera.bgColor = FlxColor.BLUE; // turns screen blue
-
+		createBanner();
 		createPlayButton();
 		createTitleText();
 		createOptionsButton();
-		createBanner();
-	//menuMusic();
-		
-		
 
-		FlxG.camera.fade(FlxColor.BLACK, .33, true); //fade out while switching states
+		//menuMusic();
+
+		FlxG.camera.fade(FlxColor.BLACK, .5, true); //fade out while switching states
 
 		super.create();
 
@@ -43,10 +41,10 @@ class State_Menu extends FlxState
 	public function createBanner()
 	{
 		var bannerUnit = new FlxSprite();
-		bannerUnit.loadGraphic(AssetPaths.bannerUnit__png);
+		bannerUnit.loadGraphic(AssetPaths.menuScreen__png);
 		add(bannerUnit);
-		bannerUnit.x = (FlxG.width / 2) - (bannerUnit.width /2);
-		bannerUnit.y = (FlxG.height/2) - bannerUnit.height + 150;
+		//bannerUnit.x = (FlxG.width / 2) - (bannerUnit.width /2);
+		//bannerUnit.y = (FlxG.height/2) - bannerUnit.height + 150;
 	}
 
 	public function createPlayButton()
@@ -84,7 +82,7 @@ class State_Menu extends FlxState
 
 		FlxG.camera.fade(FlxColor.BLACK,.33, false, function()
 		{
-			FlxG.switchState(new State_Game());
+			FlxG.switchState(new State_LevelSelect());
 		});
 
 		//FlxG.switchState(new states.State_Game()); //switches state to 'State_Game' if function is called
