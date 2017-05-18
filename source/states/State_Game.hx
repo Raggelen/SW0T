@@ -8,6 +8,7 @@ import flixel.tile.FlxTilemap;
 import flixel.util.FlxColor;
 import source.Player;
 import flixel.math.FlxPoint;
+import Spelers;
 
 class State_Game extends FlxState
 
@@ -17,6 +18,10 @@ class State_Game extends FlxState
 	//private var 	_player1_light:Player;
 	//private var	 	_player1_medium:Player;
 	//private var 	_player1_heavy:Player;
+	var unit : Unit;
+	var players : Array<Spelers> = new Array();
+
+
 
 	public var _map:FlxOgmoLoader;
 	public var _mWalls:FlxTilemap;
@@ -29,6 +34,7 @@ class State_Game extends FlxState
 		FlxG.camera.fade(FlxColor.BLACK, .5, true); //fade out while switching states
 
 		loadLevel1();
+		createPlayers();
 
 		createPlayer();
 		FlxG.camera.follow(_player, NO_DEAD_ZONE, 1); //follow the player using the topdown style with a lerp of 1 (camera smoothness)
@@ -103,5 +109,14 @@ class State_Game extends FlxState
 
 		add(_mWalls);
 	}
-
+	
+	function createPlayers() 
+	{
+		for (i in 0 ... 4) {
+			var player : Spelers = new Spelers();
+			player.playerName = "Player " + i;
+			players.push(player);
+			trace(players[0].units[2].type);
+	}
+	}
 }
