@@ -62,7 +62,7 @@ class State_LevelSelect extends FlxState
 	public function _bannerTestLevel()
 	{
 		var testLevelimage = new FlxSprite();
-		testLevelimage.loadGraphic(AssetPaths.newlevel3image__png);
+		testLevelimage.loadGraphic(AssetPaths.Foresttestlevelimage__png);
 		add(testLevelimage);
 		//testLevelimage.x = (FlxG.width / 2) - (testLevelimage.width /2);
 		//testLevelimage.y = (FlxG.height / 2) - testLevelimage.height + 150;

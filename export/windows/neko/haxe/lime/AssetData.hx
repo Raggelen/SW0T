@@ -18,10 +18,10 @@ class AssetData {
 			
 			path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 			type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/data/Level1/newlevel3.oel", "assets/data/Level1/newlevel3.oel");
-			type.set ("assets/data/Level1/newlevel3.oel", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/data/Level1/newlevel3image.png", "assets/data/Level1/newlevel3image.png");
-			type.set ("assets/data/Level1/newlevel3image.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/data/Level1/Foresttestlevel.oel", "assets/data/Level1/Foresttestlevel.oel");
+			type.set ("assets/data/Level1/Foresttestlevel.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/data/Level1/Foresttestlevelimage.png", "assets/data/Level1/Foresttestlevelimage.png");
+			type.set ("assets/data/Level1/Foresttestlevelimage.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/data/Levels.oep", "assets/data/Levels.oep");
 			type.set ("assets/data/Levels.oep", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/data/SW0TLEVELS.oep", "assets/data/SW0TLEVELS.oep");
@@ -36,6 +36,8 @@ class AssetData {
 			type.set ("assets/data/TestLevels/TestLevel2/TestLevel2.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/bannerUnit.png", "assets/images/bannerUnit.png");
 			type.set ("assets/images/bannerUnit.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/HeavySpriteSheet.png", "assets/images/HeavySpriteSheet.png");
+			type.set ("assets/images/HeavySpriteSheet.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 			type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/images/menuScreen.png", "assets/images/menuScreen.png");
@@ -46,6 +48,8 @@ class AssetData {
 			type.set ("assets/images/tiles.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Tileset1.png", "assets/images/Tileset1.png");
 			type.set ("assets/images/Tileset1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/tilesetForest.png", "assets/images/tilesetForest.png");
+			type.set ("assets/images/tilesetForest.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/WallTile.jpg", "assets/images/WallTile.jpg");
 			type.set ("assets/images/WallTile.jpg", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/music/HaxeFlixel_Tutorial_Game.mp3", "assets/music/HaxeFlixel_Tutorial_Game.mp3");
