@@ -16,7 +16,8 @@ import haxe.macro.Expr.Var;
 class State_LevelSelect extends FlxState
 {
 
-	private var _testlevel:FlxButton;
+	public var _testlevel:FlxButton;
+	public var testLevelimage = new FlxSprite();
 
 	override public function create():Void
 	{
@@ -24,9 +25,9 @@ class State_LevelSelect extends FlxState
 
 		FlxG.camera.fade(FlxColor.BLACK, .5, true); //fade out while switching states
 
-		createTestLevel();
-		_bannerTestLevel(); 
 		
+		_bannerTestLevel();
+createTestLevel();
 		super.create();
 
 	}
@@ -50,27 +51,27 @@ class State_LevelSelect extends FlxState
 	public function createTestLevel()
 	{
 		_testlevel = new FlxButton(0, 0, "Test level", clickTestLevel); //creates a button at (0,0) that says play, and calls function 'clickPlay'
-		//_testlevel.x = (FlxG.width / 2) - _testlevel.width - 10;
-		//_testlevel.y = FlxG.height - _testlevel.height - 50;
-		
-		
-		
+		_testlevel.x = (FlxG.width / 2) - _testlevel.width - 10;
+		_testlevel.y = FlxG.height - _testlevel.height - 50;
 		
 		add(_testlevel);
+		//_testlevel.x = testLevelimage.x;
+		//_testlevel.y = testLevelimage.y - 50;
+
 	}
 
 	public function _bannerTestLevel()
 	{
-		var testLevelimage = new FlxSprite();
-<<<<<<< HEAD
+		testLevelimage = new FlxSprite();
+
 		testLevelimage.loadGraphic(AssetPaths.Foresttestlevelimage__png);
-=======
+
 		testLevelimage.loadGraphic(AssetPaths.Foresttestlevel2image__png);
->>>>>>> origin/Units-spawning
+
 		add(testLevelimage);
 		testLevelimage.x = (FlxG.width - testLevelimage.width) / 2;
 		testLevelimage.y = (FlxG.height - testLevelimage.height) / 2;
-		testLevelimage.scale.set(0.5,0.5); 
+		testLevelimage.scale.set(0.5,0.5);
 
 	}
 

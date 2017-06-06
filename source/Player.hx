@@ -174,22 +174,7 @@ class Player extends FlxSprite
 		{
 			trace("RIGHT");
 			moveTo(MoveDirection.RIGHT);
-		}
-
-		/*
-				if (_up && _down) //if up and down are pressed the player won't move
-					_up = _down = false;
-
-				if (_left && _right) //if left and right are pressed the player won't move
-					_left = _right = false;
-
-				if (_up || _down || _left || _right) //Make sure player is actually moving, '||' is called a Logical OR Operator. If any of the operands is non-zero, then the condition becomes true.
-				{
-					velocity.set(speed, 0);
-					velocity.rotate(FlxPoint.weak(0, 0), mA);
-				}
-
-				*/
+		}		
 	}
 
 	public function moveTo(Direction:MoveDirection):Void
@@ -209,98 +194,4 @@ class Player extends FlxSprite
 		}
 	}
 
-	/**
-	 * This part is so that moving left/right and up/down doesn't increase the speed of the player
-	 */
-
-	/*
-	public function speedModifier() //calculates speedModifier mA
-	{
-		if (_up)
-		{
-			mA = -90;
-			//trace("up");
-
-			if (_left)
-			{
-				mA -= 45; //diagonal up-left
-				//trace("diagonal up-left");
-			}
-
-			else if (_right)
-			{
-				mA += 45; ///diagonal up-right
-				//trace("diagonal up-right");
-			}
-		}
-
-		else if (_down)
-		{
-			mA = 90;
-
-			if (_left)
-			{
-				mA += 45;//diagonal down-left
-				//trace("diagonal down-left");
-			}
-
-			else if (_right)
-			{
-				mA -= 45;//diagonal down-right
-				//trace("diagonal down-right");
-			}
-		}
-
-		else if (_left)
-		{
-			mA = 180; //left
-			//trace("left");
-		}
-
-		else if (_right)
-		{
-			mA = 0;//right
-			//trace("right");
-		}
-	}
-
-	public function faceDirection() // what direction is the unit facing.
-	{
-		if (mA == 45)
-		{
-			facing = FlxObject.UP;
-			trace("UP");
-		}
-
-		if (mA == -45)
-		{
-			facing = FlxObject.DOWN;
-			trace("DOWN");
-		}
-
-		if (mA == 180)
-		{
-			facing = FlxObject.LEFT;
-			trace("LEFT");
-		}
-
-		if (mA == 0)
-		{
-			facing = FlxObject.RIGHT;
-			trace("RIGHT");
-		}
-
-		switch (facing)
-		{
-			case FlxObject.LEFT, FlxObject.RIGHT:
-				animation.play("leftright");
-			case FlxObject.UP:
-				animation.play("up");
-			case FlxObject.DOWN:
-				animation.play("down");
-
-		}
-	}
-
-	*/
 }
