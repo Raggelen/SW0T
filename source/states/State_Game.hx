@@ -4,6 +4,7 @@ import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxState;
 import flixel.addons.editors.ogmo.FlxOgmoLoader;
+import flixel.text.FlxText;
 import flixel.tile.FlxTilemap;
 import flixel.util.FlxColor;
 import source.Player;
@@ -20,6 +21,7 @@ class State_Game extends FlxState
 
 	public var _map:FlxOgmoLoader;
 	public var _mWalls:FlxTilemap;
+	private var _movmentPoolCount:FlxText;
 
 	override public function create():Void
 
@@ -34,11 +36,33 @@ class State_Game extends FlxState
 		FlxG.camera.follow(_player, NO_DEAD_ZONE, 1); //follow the player using the topdown style with a lerp of 1 (camera smoothness)
 		//FlxG.camera.follow(FlxG.mouse.getWorldPosition, NO_DEAD_ZONE, 1);
 		FlxG.camera.zoom = 1 ; //camera zoom, duh
-
+		
+	
+		movementPoolText();
+	
 		super.create();
 
 	}
 
+	public function movementPoolText()
+	{
+
+		_movmentPoolCount = new FlxText(0, 0, 0, Std.string(_player.movementPoints), 30);
+		//_movmentPoolCount.alignment = CENTER;
+		//_movmentPoolCount.screenCenter(X);
+		add(_movmentPoolCount);
+		//_movmentPoolCount.y = 20;
+	
+		trace("make movement pool text");          
+	}
+
+	function movementPoolUpdate()
+	{
+		_movmentPoolCount.text = Std.string(_player.movementPoints);
+		_movmentPoolCount.x = _player.x + 20;
+		_movmentPoolCount.y = _player.y + 20;
+	}
+	
 	override public function update(elapsed:Float):Void
 
 	{
@@ -51,10 +75,21 @@ class State_Game extends FlxState
 			// Mouse wheel logic goes here, for example zooming in / out:
 			FlxG.camera.zoom += (FlxG.mouse.wheel / 10);
 		}
+
+		//checkCollison();
+		movementPoolUpdate(); 
+		
 	}
-
+	/*
+		public function checkCollison()
+		{
+			if (FlxG.collide(_player,_mWalls)
+			{
+				_player.moveToNextTile = false;
+			}
+		}
+	*/
 	function  createPlayer()
-
 	{
 		//_player = new Player(200,200);
 		_player = new Player();
@@ -72,7 +107,7 @@ class State_Game extends FlxState
 		var x:Int = Std.parseInt(entityData.get("x"));
 		var y:Int = Std.parseInt(entityData.get("y"));
 
-		if (entityName == "NewObject0")
+		if (entityName == "player")
 		{
 			//_player1_light.x = x; // set player x coordinate
 			//_player1_light.y = y; // set player y coordinate
@@ -84,8 +119,8 @@ class State_Game extends FlxState
 
 	function loadLevel1()
 	{
-		_map = new FlxOgmoLoader(AssetPaths.newlevel3__oel);
-		_mWalls = _map.loadTilemap(AssetPaths.Tileset1__png, 16, 16, "Walls"); //loads map from walls layer
+		_map = new FlxOgmoLoader(AssetPaths.Foresttestlevel__oel);
+		_mWalls = _map.loadTilemap(AssetPaths.tilesetForest__png, 32, 32, "walls"); //loads map from walls layer
 		_mWalls.follow();
 
 		_mWalls.setTileProperties(1, FlxObject.NONE); //no collision with floor tiles

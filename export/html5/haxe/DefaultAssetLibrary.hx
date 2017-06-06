@@ -58,6 +58,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -69,10 +85,42 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/data/Level1/Foresttestlevel.oel", __ASSET__assets_data_level1_foresttestlevel_oel);
+		type.set ("assets/data/Level1/Foresttestlevel.oel", AssetType.TEXT);
+		className.set ("assets/data/Level1/Foresttestlevelimage.png", __ASSET__assets_data_level1_foresttestlevelimage_png);
+		type.set ("assets/data/Level1/Foresttestlevelimage.png", AssetType.IMAGE);
+		className.set ("assets/data/Levels.oep", __ASSET__assets_data_levels_oep);
+		type.set ("assets/data/Levels.oep", AssetType.TEXT);
+		className.set ("assets/data/SW0TLEVELS.oep", __ASSET__assets_data_sw0tlevels_oep);
+		type.set ("assets/data/SW0TLEVELS.oep", AssetType.TEXT);
+		className.set ("assets/data/TestLevels/TestLevel/TestLevel.oel", __ASSET__assets_data_testlevels_testlevel_testlevel_oel);
+		type.set ("assets/data/TestLevels/TestLevel/TestLevel.oel", AssetType.TEXT);
+		className.set ("assets/data/TestLevels/TestLevel/TestLevel.png", __ASSET__assets_data_testlevels_testlevel_testlevel_png);
+		type.set ("assets/data/TestLevels/TestLevel/TestLevel.png", AssetType.IMAGE);
+		className.set ("assets/data/TestLevels/TestLevel2/TestLevel2.oel", __ASSET__assets_data_testlevels_testlevel2_testlevel2_oel);
+		type.set ("assets/data/TestLevels/TestLevel2/TestLevel2.oel", AssetType.TEXT);
+		className.set ("assets/data/TestLevels/TestLevel2/TestLevel2.png", __ASSET__assets_data_testlevels_testlevel2_testlevel2_png);
+		type.set ("assets/data/TestLevels/TestLevel2/TestLevel2.png", AssetType.IMAGE);
+		className.set ("assets/images/bannerUnit.png", __ASSET__assets_images_bannerunit_png);
+		type.set ("assets/images/bannerUnit.png", AssetType.IMAGE);
+		className.set ("assets/images/HeavySpriteSheet.png", __ASSET__assets_images_heavyspritesheet_png);
+		type.set ("assets/images/HeavySpriteSheet.png", AssetType.IMAGE);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		className.set ("assets/images/menuScreen.png", __ASSET__assets_images_menuscreen_png);
+		type.set ("assets/images/menuScreen.png", AssetType.IMAGE);
+		className.set ("assets/images/player.png", __ASSET__assets_images_player_png);
+		type.set ("assets/images/player.png", AssetType.IMAGE);
+		className.set ("assets/images/tiles.png", __ASSET__assets_images_tiles_png);
+		type.set ("assets/images/tiles.png", AssetType.IMAGE);
+		className.set ("assets/images/Tileset1.png", __ASSET__assets_images_tileset1_png);
+		type.set ("assets/images/Tileset1.png", AssetType.IMAGE);
+		className.set ("assets/images/tilesetForest.png", __ASSET__assets_images_tilesetforest_png);
+		type.set ("assets/images/tilesetForest.png", AssetType.IMAGE);
 		className.set ("assets/images/WallTile.jpg", __ASSET__assets_images_walltile_jpg);
 		type.set ("assets/images/WallTile.jpg", AssetType.IMAGE);
+		className.set ("assets/music/HaxeFlixel_Tutorial_Game.mp3", __ASSET__assets_music_haxeflixel_tutorial_game_mp3);
+		type.set ("assets/music/HaxeFlixel_Tutorial_Game.mp3", AssetType.MUSIC);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
@@ -98,14 +146,78 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/data/Level1/Foresttestlevel.oel";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/Level1/Foresttestlevelimage.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/data/Levels.oep";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/SW0TLEVELS.oep";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/TestLevels/TestLevel/TestLevel.oel";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/TestLevels/TestLevel/TestLevel.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/data/TestLevels/TestLevel2/TestLevel2.oel";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/TestLevels/TestLevel2/TestLevel2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/bannerUnit.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/HeavySpriteSheet.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/menuScreen.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/player.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/tiles.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Tileset1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/tilesetForest.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/WallTile.jpg";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/music/HaxeFlixel_Tutorial_Game.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
 		id = "assets/music/music-goes-here.txt";
 		path.set (id, id);
 		
@@ -159,11 +271,59 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		
+		className.set ("assets/data/Level1/Foresttestlevel.oel", __ASSET__assets_data_level1_foresttestlevel_oel);
+		type.set ("assets/data/Level1/Foresttestlevel.oel", AssetType.TEXT);
+		
+		className.set ("assets/data/Level1/Foresttestlevelimage.png", __ASSET__assets_data_level1_foresttestlevelimage_png);
+		type.set ("assets/data/Level1/Foresttestlevelimage.png", AssetType.IMAGE);
+		
+		className.set ("assets/data/Levels.oep", __ASSET__assets_data_levels_oep);
+		type.set ("assets/data/Levels.oep", AssetType.TEXT);
+		
+		className.set ("assets/data/SW0TLEVELS.oep", __ASSET__assets_data_sw0tlevels_oep);
+		type.set ("assets/data/SW0TLEVELS.oep", AssetType.TEXT);
+		
+		className.set ("assets/data/TestLevels/TestLevel/TestLevel.oel", __ASSET__assets_data_testlevels_testlevel_testlevel_oel);
+		type.set ("assets/data/TestLevels/TestLevel/TestLevel.oel", AssetType.TEXT);
+		
+		className.set ("assets/data/TestLevels/TestLevel/TestLevel.png", __ASSET__assets_data_testlevels_testlevel_testlevel_png);
+		type.set ("assets/data/TestLevels/TestLevel/TestLevel.png", AssetType.IMAGE);
+		
+		className.set ("assets/data/TestLevels/TestLevel2/TestLevel2.oel", __ASSET__assets_data_testlevels_testlevel2_testlevel2_oel);
+		type.set ("assets/data/TestLevels/TestLevel2/TestLevel2.oel", AssetType.TEXT);
+		
+		className.set ("assets/data/TestLevels/TestLevel2/TestLevel2.png", __ASSET__assets_data_testlevels_testlevel2_testlevel2_png);
+		type.set ("assets/data/TestLevels/TestLevel2/TestLevel2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/bannerUnit.png", __ASSET__assets_images_bannerunit_png);
+		type.set ("assets/images/bannerUnit.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/HeavySpriteSheet.png", __ASSET__assets_images_heavyspritesheet_png);
+		type.set ("assets/images/HeavySpriteSheet.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		
+		className.set ("assets/images/menuScreen.png", __ASSET__assets_images_menuscreen_png);
+		type.set ("assets/images/menuScreen.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/player.png", __ASSET__assets_images_player_png);
+		type.set ("assets/images/player.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/tiles.png", __ASSET__assets_images_tiles_png);
+		type.set ("assets/images/tiles.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Tileset1.png", __ASSET__assets_images_tileset1_png);
+		type.set ("assets/images/Tileset1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/tilesetForest.png", __ASSET__assets_images_tilesetforest_png);
+		type.set ("assets/images/tilesetForest.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/WallTile.jpg", __ASSET__assets_images_walltile_jpg);
 		type.set ("assets/images/WallTile.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/music/HaxeFlixel_Tutorial_Game.mp3", __ASSET__assets_music_haxeflixel_tutorial_game_mp3);
+		type.set ("assets/music/HaxeFlixel_Tutorial_Game.mp3", AssetType.MUSIC);
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
@@ -834,8 +994,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if flash
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_level1_foresttestlevel_oel extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_level1_foresttestlevelimage_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_data_levels_oep extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_sw0tlevels_oep extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_testlevels_testlevel_testlevel_oel extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_testlevels_testlevel_testlevel_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_data_testlevels_testlevel2_testlevel2_oel extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_testlevels_testlevel2_testlevel2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_bannerunit_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_heavyspritesheet_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_menuscreen_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_tiles_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_tileset1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_tilesetforest_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_walltile_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_music_haxeflixel_tutorial_game_mp3 extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
@@ -847,6 +1023,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -869,8 +1061,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:file("assets/data/data-goes-here.txt") #if display private #end class __ASSET__assets_data_data_goes_here_txt extends lime.utils.Bytes {}
+@:file("assets/data/Level1/Foresttestlevel.oel") #if display private #end class __ASSET__assets_data_level1_foresttestlevel_oel extends lime.utils.Bytes {}
+@:image("assets/data/Level1/Foresttestlevelimage.png") #if display private #end class __ASSET__assets_data_level1_foresttestlevelimage_png extends lime.graphics.Image {}
+@:file("assets/data/Levels.oep") #if display private #end class __ASSET__assets_data_levels_oep extends lime.utils.Bytes {}
+@:file("assets/data/SW0TLEVELS.oep") #if display private #end class __ASSET__assets_data_sw0tlevels_oep extends lime.utils.Bytes {}
+@:file("assets/data/TestLevels/TestLevel/TestLevel.oel") #if display private #end class __ASSET__assets_data_testlevels_testlevel_testlevel_oel extends lime.utils.Bytes {}
+@:image("assets/data/TestLevels/TestLevel/TestLevel.png") #if display private #end class __ASSET__assets_data_testlevels_testlevel_testlevel_png extends lime.graphics.Image {}
+@:file("assets/data/TestLevels/TestLevel2/TestLevel2.oel") #if display private #end class __ASSET__assets_data_testlevels_testlevel2_testlevel2_oel extends lime.utils.Bytes {}
+@:image("assets/data/TestLevels/TestLevel2/TestLevel2.png") #if display private #end class __ASSET__assets_data_testlevels_testlevel2_testlevel2_png extends lime.graphics.Image {}
+@:image("assets/images/bannerUnit.png") #if display private #end class __ASSET__assets_images_bannerunit_png extends lime.graphics.Image {}
+@:image("assets/images/HeavySpriteSheet.png") #if display private #end class __ASSET__assets_images_heavyspritesheet_png extends lime.graphics.Image {}
 @:file("assets/images/images-go-here.txt") #if display private #end class __ASSET__assets_images_images_go_here_txt extends lime.utils.Bytes {}
+@:image("assets/images/menuScreen.png") #if display private #end class __ASSET__assets_images_menuscreen_png extends lime.graphics.Image {}
+@:image("assets/images/player.png") #if display private #end class __ASSET__assets_images_player_png extends lime.graphics.Image {}
+@:image("assets/images/tiles.png") #if display private #end class __ASSET__assets_images_tiles_png extends lime.graphics.Image {}
+@:image("assets/images/Tileset1.png") #if display private #end class __ASSET__assets_images_tileset1_png extends lime.graphics.Image {}
+@:image("assets/images/tilesetForest.png") #if display private #end class __ASSET__assets_images_tilesetforest_png extends lime.graphics.Image {}
 @:image("assets/images/WallTile.jpg") #if display private #end class __ASSET__assets_images_walltile_jpg extends lime.graphics.Image {}
+@:file("assets/music/HaxeFlixel_Tutorial_Game.mp3") #if display private #end class __ASSET__assets_music_haxeflixel_tutorial_game_mp3 extends lime.utils.Bytes {}
 @:file("assets/music/music-goes-here.txt") #if display private #end class __ASSET__assets_music_music_goes_here_txt extends lime.utils.Bytes {}
 @:file("assets/sounds/sounds-go-here.txt") #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/sounds/beep.ogg") #if display private #end class __ASSET__flixel_sounds_beep_ogg extends lime.utils.Bytes {}
