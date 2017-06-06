@@ -1,4 +1,4 @@
-package source;
+	package source;
 
 import flash.errors.ArgumentError;
 import flixel.FlxObject;
