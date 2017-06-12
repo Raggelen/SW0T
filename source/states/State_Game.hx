@@ -54,6 +54,8 @@ class State_Game extends FlxState
 		FlxG.camera.zoom = 1 ; //camera zoom, duh
 
 		//movementPoolText();
+		
+		//var camera = new Camera();
 
 		super.create();
 
@@ -75,16 +77,17 @@ class State_Game extends FlxState
 	}
 */
 	override public function update(elapsed:Float):Void
-
 	{
-
+		
 		FlxG.collide(_player, _mWalls);
 		//FlxG.camera.shake(0.01, 0.2); //camera shake, for when a unit dies?
 
+		
 		if (FlxG.mouse.wheel != 0)
 		{
 			// Mouse wheel logic goes here, for example zooming in / out:
 			FlxG.camera.zoom += (FlxG.mouse.wheel / 10);
+			
 		}
 
 		//checkCollison();
