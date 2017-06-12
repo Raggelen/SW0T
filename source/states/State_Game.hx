@@ -1,5 +1,10 @@
 package states;
 
+import flash.events.GameInputEvent;
+import flixel.FlxSprite;
+import openfl.Lib;
+import openfl.events.Event;
+import openfl.events.MouseEvent;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxState;
@@ -9,6 +14,8 @@ import flixel.tile.FlxTilemap;
 import flixel.util.FlxColor;
 import source.Player;
 import flixel.math.FlxPoint;
+import flixel.input.mouse.FlxMouseEventManager;
+import flixel.input.FlxInput;
 import Spelers;
 
 class State_Game extends FlxState
@@ -32,13 +39,15 @@ class State_Game extends FlxState
 	var player4_medium : Unit;
 	var player4_heavy : Unit;
 
-	var unit : Unit;
-	var players : Array<Spelers> = new Array();
+	public var unit : Unit;
+	public var players : Array<Spelers> = new Array();
 
 	public var _map:FlxOgmoLoader;
 	public var _mWalls:FlxTilemap;
 	private var _movmentPoolCount:FlxText;
 
+	public static var instance(default, null) : State_Game = new State_Game();
+	
 	override public function create():Void
 
 	{
@@ -113,19 +122,16 @@ class State_Game extends FlxState
 		{
 			if (unit.type == "light")
 			{
-				trace("P1: Light unit");
 				player1_light = players[0].units[0];
 				add(player1_light);
 			}
 			else if (unit.type == "medium")
 			{
-				trace("P1: Medium unit");
 				player1_medium = players[0].units[1];
 				add(player1_medium);
 			}
 			else if (unit.type == "heavy")
 			{
-				trace("P1: Heavy unit");
 				player1_heavy = players[0].units[2];
 				add(player1_heavy);
 			}
@@ -135,21 +141,18 @@ class State_Game extends FlxState
 		{
 			if (unit.type == "light")
 			{
-				trace("P2: Light unit");
 				player2_light = players[1].units[0];
-				add(player2_light);
+				add(player2_light);				
 			}
 			else if (unit.type == "medium")
 			{
-				trace("P2: Medium unit");
 				player2_medium = players[1].units[1];
-				add(player2_medium);
+				add(player2_medium);				
 			}
 			else if (unit.type == "heavy")
 			{
-				trace("P2: Heavy unit");
 				player2_heavy = players[1].units[2];
-				add(player2_heavy);
+				add(player2_heavy);				
 			}
 		}
 
@@ -157,19 +160,16 @@ class State_Game extends FlxState
 		{
 			if (unit.type == "light")
 			{
-				trace("P3: Light unit");
 				player3_light = players[2].units[0];
 				add(player3_light);
 			}
 			else if (unit.type == "medium")
 			{
-				trace("P3: Medium unit");
 				player3_medium = players[2].units[1];
 				add(player3_medium);
 			}
 			else if (unit.type == "heavy")
 			{
-				trace("P3: Heavy unit");
 				player3_heavy = players[2].units[2];
 				add(player3_heavy);
 			}
@@ -179,19 +179,16 @@ class State_Game extends FlxState
 		{
 			if (unit.type == "light")
 			{
-				trace("P4: Light unit");
 				player4_light = players[3].units[0];
 				add(player4_light);
 			}
 			else if (unit.type == "medium")
 			{
-				trace("P4: Medium unit");
 				player4_medium = players[3].units[1];
 				add(player4_medium);
 			}
 			else if (unit.type == "heavy")
 			{
-				trace("P4: Heavy unit");
 				player4_heavy = players[3].units[2];
 				add(player4_heavy);
 			}
@@ -210,7 +207,6 @@ class State_Game extends FlxState
 		{
 			player1_light.x = x;
 			player1_light.y = y;
-
 		}
 
 		else if (entityName == "medium1")
@@ -300,6 +296,5 @@ class State_Game extends FlxState
 		_mWalls.setTileProperties(12, FlxObject.ANY); //collision with walls
 		add(_mWalls);
 	}
-
 }
 

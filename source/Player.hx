@@ -63,10 +63,10 @@ class Player extends FlxSprite
 	
 	public function MovementPool() 
 	{
-			if (movementPoints < 0)
-			{
-				movementPoints = 0;
-			}
+		if (movementPoints < 0)
+		{
+			movementPoints = 0;
+		}
 	}
 	
 	
@@ -98,7 +98,7 @@ class Player extends FlxSprite
 
 		loadGraphic(AssetPaths.HeavySpriteSheet__png, true, 32, 32); //tells sprite to use player.png, its animated, and that each frame is 16x16
 		drag.x = drag.y = 1600;
-		//setSize(16, 28); //change hitbox so that player can move easier through 1 block doorways
+		setSize(32, 32); //change hitbox so that player can move easier through 1 block doorways
 		//offset.set(4, 2); //change hitbox so that player can move easier through 1 block doorways
 
 		//allows the sprite to be flipped based on its 'facing' value, so we only need sprites for one direction (left)
