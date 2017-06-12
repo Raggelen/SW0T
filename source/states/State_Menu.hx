@@ -41,10 +41,9 @@ class State_Menu extends FlxState
 	public function createBanner()
 	{
 		var bannerUnit = new FlxSprite();
-		bannerUnit.loadGraphic(AssetPaths.menuScreen__png);
+		bannerUnit.loadGraphic(AssetPaths.MenuScreen__png);
+		
 		add(bannerUnit);
-		//bannerUnit.x = (FlxG.width / 2) - (bannerUnit.width /2);
-		//bannerUnit.y = (FlxG.height/2) - bannerUnit.height + 150;
 	}
 
 	public function createPlayButton()

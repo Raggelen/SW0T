@@ -63,10 +63,10 @@ class Player extends FlxSprite
 	
 	public function MovementPool() 
 	{
-			if (movementPoints < 0)
-			{
-				movementPoints = 0;
-			}
+		if (movementPoints < 0)
+		{
+			movementPoints = 0;
+		}
 	}
 	
 	

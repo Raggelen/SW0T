@@ -1,6 +1,8 @@
 package;
 
 import openfl.display.Sprite;
+import openfl.events.Event;
+import openfl.events.MouseEvent;
 
 /**
  * ...
@@ -44,13 +46,13 @@ class Spelers extends Sprite
 	 */
 	function assignUnits(tempType : String) {		
 		if (tempType == "light") {
-			imagePath = AssetPaths.Light__png;
+			imagePath = AssetPaths.LightSpriteSheet__png;
 		}
 		else if (tempType == "medium") {
-			imagePath = AssetPaths.Medium__png;
+			imagePath = AssetPaths.MediumSpriteSheet__png;
 		}
 		else if (tempType == "heavy") {
-			imagePath = AssetPaths.Heavy__png;
+			imagePath = AssetPaths.HeavySpriteSheet__png;
 		}
 		else {
 			trace ("No such type");

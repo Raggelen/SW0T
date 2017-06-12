@@ -27,7 +27,7 @@ class State_LevelSelect extends FlxState
 
 		
 		_bannerTestLevel();
-createTestLevel();
+		createTestLevel();
 		super.create();
 
 	}
@@ -51,20 +51,15 @@ createTestLevel();
 	public function createTestLevel()
 	{
 		_testlevel = new FlxButton(0, 0, "Test level", clickTestLevel); //creates a button at (0,0) that says play, and calls function 'clickPlay'
-		_testlevel.x = (FlxG.width / 2) - _testlevel.width - 10;
-		_testlevel.y = FlxG.height - _testlevel.height - 50;
+		_testlevel.x = (FlxG.width  - _testlevel.width) / 2;
+		_testlevel.y = (FlxG.height - _testlevel.height) - 50;
 		
 		add(_testlevel);
-		//_testlevel.x = testLevelimage.x;
-		//_testlevel.y = testLevelimage.y - 50;
-
 	}
 
 	public function _bannerTestLevel()
 	{
 		testLevelimage = new FlxSprite();
-
-		testLevelimage.loadGraphic(AssetPaths.Foresttestlevelimage__png);
 
 		testLevelimage.loadGraphic(AssetPaths.Foresttestlevel2image__png);
 
