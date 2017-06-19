@@ -9,6 +9,7 @@ import flixel.ui.FlxButton;
 import flixel.util.FlxColor;
 import flixel.FlxSprite;
 import haxe.macro.Expr.Var;
+import flixel.addons.ui.FlxButtonPlus;
 
 import AssetPaths;
 /**
@@ -17,7 +18,7 @@ import AssetPaths;
 */
 class State_Menu extends FlxState
 {
-	private var _btnPlay:FlxButton;
+	private var _btnPlay:FlxButtonPlus;
 
 	private var _txtTitle:FlxText;
 	private var _btnOptions:FlxButton;
@@ -41,15 +42,15 @@ class State_Menu extends FlxState
 	public function createBanner()
 	{
 		var bannerUnit = new FlxSprite();
-		bannerUnit.loadGraphic(AssetPaths.menuScreen__png);
+		bannerUnit.loadGraphic(AssetPaths.MenuScreen__png);
+		
 		add(bannerUnit);
-		//bannerUnit.x = (FlxG.width / 2) - (bannerUnit.width /2);
-		//bannerUnit.y = (FlxG.height/2) - bannerUnit.height + 150;
 	}
 
 	public function createPlayButton()
 	{
-		_btnPlay = new FlxButton(0, 0, "Play", clickPlay); //creates a button at (0,0) that says play, and calls function 'clickPlay'
+		//var playButtonText = new FlxText(0, 0, 200, "Play", 30);
+		_btnPlay = new FlxButtonPlus(0, 0, clickPlay, "Play", 200, 200); //creates a button at (0,0) that says play, and calls function 'clickPlay'
 		_btnPlay.x = (FlxG.width / 2) - _btnPlay.width - 10;
 		_btnPlay.y = FlxG.height - _btnPlay.height - 50;
 		add(_btnPlay);

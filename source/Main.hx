@@ -32,7 +32,6 @@ class Main extends Sprite
 
 		FlxG.camera.bgColor = FlxColor.RED; // Turns screen red
 		
-		
 		}
 
 	
